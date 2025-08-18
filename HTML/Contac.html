@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="../CSS/Globle.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
 
 </head>
 <body>
@@ -37,13 +38,17 @@
             <p>Get in touch with us for assistence</p> 
         </section>
     <Main><!--got no idea-->
-        <form action="">
+        <form action="Contac.html" method="get">
             <fieldset>
                 <legend>Contact form</legend>
                 <input type="text" placeholder="Enter first name" name="Firstname">
                 <input type="text" placeholder="Enter last name" name="Lastname" >
+                <br>
                 <input type="email" placeholder="Enter email" name="Email" >
-                <!--more inputs-->
+                <br>
+                <input type="" placeholder="Enter Message" name="Message" id="Message">
+                <br>
+                <button type="submit" id="Sender">Send</button>
             </fieldset>
         </form>
         <aside id="contacts">
@@ -54,6 +59,10 @@
             <article id="conTel">
                 <h3>Tellphone:</h3>
                 <p><a href="tel:+271231234123">+27 123 1234 123</a></p>
+            </article>
+            <article id="conAdd">
+                <h3>Address</h3>
+                <p><address>42 Fynbos Street, Stalenbosch, Cape Town, 7599, South Africa</address></p>
             </article>
         </aside>
     </Main>
