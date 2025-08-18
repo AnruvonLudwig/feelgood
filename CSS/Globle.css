@@ -1,0 +1,323 @@
+@media (prefers-color-scheme: dark){
+:root{
+    --Rosewater: #f5e0dc;
+    --Peach:#fab387;
+    --Mauve:#cba6f7;
+    --Red:#f38ba8;
+    --Green:#a6e3a1;
+    --Blue:#89b4fa;
+    --Lavender:#b4befe;
+
+    --Text:#cdd6f4;
+    --SubText:#a6adc8;
+    --Overlay:#6c7086;
+    --Surface:#313244;
+    --Base:#1e1e2e;
+    --Mantle:#181825;
+    --Crust:#11111b;
+}
+}
+
+@media (prefers-color-scheme: light){
+:root{
+    --Rosewater: #dc8a78;
+    --Peach:#fe640b;
+    --Mauve:#8839ef;
+    --Red:#d20f39;
+    --Green:#40a02b;
+    --Blue:#1e66f5;
+    --Lavender:#7287fd;
+
+    --Text:#4c4f69;
+    --SubText:#6c6f85;
+    --Overlay:#9ca0b0;
+    --Surface:#ccd0da;
+    --Base:#eff1f5;
+    --Mantle:#e6e9ef;
+    --Crust:#dce0e8 ;
+}
+}
+/*type color: Text [tab]; and it will fill in the var thing*/ 
+*{
+    box-sizing: content-box;
+}
+img{
+    width: 350px;
+    height: 200px;
+}
+.buttonLess{
+    width: 16rem;
+    border: 1px solid var(--Surface);
+    background-color: var(--Mantle);
+    border-radius: 1rem;
+    text-align: center;
+    margin: 0 auto;
+}
+.buttonLess a{
+    text-decoration: none;
+     color: var(--Blue);
+}
+/*fml*/
+html{
+    background-color: #11111b;
+}
+body{
+    font-family: 'Open Sans',sans-serif;
+    background-color: #1e1e2e;
+    color: #f5e0dc;
+    margin: 0;
+
+}
+
+h1, h2, h3, h4{
+    font-family: 'Lora', serif;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0% 5%;
+    box-shadow: 0rem 0rem 10px -8px #f5e0dc;
+    background-color:  #181825;
+}
+
+.bannernav{
+
+    position: relative;
+    margin-right: 0%;
+    /*width: 25%;*/
+    padding: 0 0%;
+}
+.bannernav ul{
+
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+    position: relative;
+    width: auto;
+    padding: 0 5%;
+    top: 25%;/*idk why tf it there up high*/
+}
+
+.bannernav ul li{
+ padding: 0 10px;
+}
+
+.bannernav ul li a{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: var(--Text);
+    padding: 5px;
+    font-weight: 600;
+}
+
+a.button1 {
+    padding: 1px 6px;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}
+
+a.button2 {
+    padding: 1px 6px;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+
+.bannernav .dropdown-menu-Lessons{
+    display: none;
+    position: absolute;
+    background-color:  var(--Mantle);
+    top: 100%;
+    left: 5;
+    width: 80px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px var(--Crust);
+}
+.bannernav .dropdown-menu-Lessons li{
+    display: block;
+}
+.bannernav .dropdown-menu-Lessons li:last-child{
+    border-bottom: none;
+}
+.bannernav .dropdown-menu-Lessons a:hover{
+    transition: 0.3s ease;
+}
+.bannernav .dropdown:hover .dropdown-menu-Lessons{
+    display: block;
+}
+
+.bannernav .dropdown-menu-Quizzes{
+    display: none;
+    position: absolute;
+    background-color:  var(--Mantle);
+    top: 100%;
+    left: 5;
+    width: 80px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px var(--Crust);
+}
+
+.dropdown-menu-Quizzes li{
+    display: block;
+}
+
+.dropdown-menu-Quizzes li:last-child{
+    border-bottom: none;
+}
+
+.dropdown-menu-Quizzes a:hover{
+    transition: 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu-Quizzes{
+    display: block;
+}
+
+header nav ul li a::after{
+    content: '';/*a blank element*/
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background: #ef9f76;
+}
+header nav ul li a:hover::after {
+    left: 0;
+    width: 100%;
+    transition: ease-in-out 0.3s;
+}
+
+main{
+    display: block;
+    margin: 10px 5%;
+}
+main p{
+    height: 10%;
+    margin: 10xp auto;
+}
+main section{
+    display: inline-block;
+    width:   25%;
+    background-color: var(--Surface);
+    border-radius: 24px;
+    margin: 5px;
+
+    padding: 5px 20px;
+}
+.hero{
+    grid-area: hero;
+    background: linear-gradient(-10deg, var(--Base), var(--Base), var(--Lavender), var(--Lavender), var(--Base));
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.hero *{
+    position: relative;
+    top: 30vh;
+    left: 20vw;
+    color: var(--Base);
+    font-family: sans-serif;
+}
+.hero h1{
+    font-size: 70px;
+    margin: auto 0px 0px;
+}
+.hero p{
+    font-size: large;
+    font-weight: bold;
+    
+}
+#lStart,#qStart{
+    display: inline-block;
+    border-radius: 4px;
+    padding: 12px 20px;
+    border: none;
+    margin: auto 10px;
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: none;
+}
+#lStart{
+    background-color: var(--Rosewater);
+    color: var(--Base);
+}
+#qStart{
+    background-color: var(--Surface);
+    color: var(--Rosewater);
+}
+#intro{
+    text-align: justify;
+    margin: 30px 0% 10px;
+    font-size: medium;
+}
+
+footer{
+    padding: 0 10vw;
+    grid-area: foot;
+    background-color: var(--Mantle);
+    display: flex;
+    justify-content: space-between;
+       box-shadow: 0rem 0rem 10px -8px var(--Rosewater); 
+}
+form{
+    background-color: var(--Surface);
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+fieldset{
+    border-radius: 5px;
+    border-color: var(--Peach);
+}
+input{
+    background-color: var(--Overlay);
+color: var(--Base);
+}
+a{
+    color:var(--Blue);
+}
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+ }
+.question {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+select, button {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+button {
+    background-color: var(--Crust);
+    color: var(--Peach);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+button:hover {
+    background-color: var(--Blue);
+}
+.Explanation{
+    display: block;
+    padding: 1rem;
+    width: 90%;
+}
+video{
+    width: 1500px;
+}

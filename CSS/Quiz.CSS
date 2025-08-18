@@ -1,0 +1,28 @@
+.BasicQuizzes{
+    display: block;
+    justify-content: space-between;
+    padding: 5%;
+    margin: 0;
+}
+article{
+    display: inline-block;
+    width:   25%;
+    background-color: #181825;
+    border-radius: 24px;
+    margin: 5px;
+
+    padding: 5px 20px;
+}
+.QuizLink{
+    width: 16rem;
+    border: 1px solid var(--Surface);
+    background-color: var(--Mantle);
+    border-radius: 1rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.QuizLink a{
+    text-decoration: none;
+     color: var(--Blue);
+}
