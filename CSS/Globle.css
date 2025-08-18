@@ -97,7 +97,6 @@ h1, h2, h3, h4{
     position: relative;
     width: auto;
     padding: 0 5%;
-    top: 25%;/*idk why tf it there up high*/
 }
 
 .bannernav ul li{
@@ -190,11 +189,11 @@ header nav ul li a::after{
     height: 2px;
     width: 0%;
     background: var(--Peach);
+    transition: ease-in-out 0.3s;
 }
 header nav ul li a:hover::after {
     left: 0;
     width: 100%;
-    transition: ease-in-out 0.3s;
 }
 
 main{
